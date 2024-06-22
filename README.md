@@ -3,7 +3,7 @@ Description.
 
 # Requirements
 * Ubuntu 24.04
-Python 3.12.3
+* Python 3.12.3
 STAR aligner 2.7.10b
 Trimmomatic 0.39
 bcftools 1.9
