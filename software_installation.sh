@@ -1,8 +1,5 @@
 #!/bin/bash
 
-mkdir software
-cd software
-
 # Install updates and required packages
 sudo apt-get update
 sudo apt-get install gcc
