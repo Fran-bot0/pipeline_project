@@ -2,15 +2,15 @@
 After discovering bioinformatics, I took some time to learn more about the topic and learn how to code. Eventually, I felt like I was ready to tackle a more complex project and decided to build this RNA-seq pipeline to test and improve my knowledge.
 ### How it works
 The pipe_script.sh is a bash script which uses 2 python scripts (downloader.py and seq_treat_script.py) to take user input and return the final bam files with the raw counts ready to be analysed. The graphs.py script takes the bam files and returns a clustermap and a volcano plot.
-1 - In the first step of the pipeline, the downloader.py script asks the user which organism they want to work with. Then, it downloads the primary assembly, the vcf, and the gtf files from ensembl.
-2 - The pipe_script.sh does some file preparations to the downloaded files, such as unziping sorting and indexing.
-3 - The seq_treat_script.py starts by asking the user with how many and which accession from NCBI they want to work with and downloads them using fasterq-dump.
-4 - The reads are trimmed using Trimmomatic.
-5 - The alignment is made using STAR
-6 - The duplicates are rmeoved using pacard.
-7 - Add read groups to the bam file using picard.
-8 - Base recalibration using GATK.
-9 - Indexing the recalibrated bam files using samtools.
+1. In the first step of the pipeline, the downloader.py script asks the user which organism they want to work with. Then, it downloads the primary assembly, the vcf, and the gtf files from ensembl.
+2. The pipe_script.sh does some file preparations to the downloaded files, such as unziping sorting and indexing.
+3. The seq_treat_script.py starts by asking the user with how many and which accession from NCBI they want to work with and downloads them using fasterq-dump.
+4. The reads are trimmed using Trimmomatic.
+5. The alignment is made using STAR
+6. The duplicates are rmeoved using pacard.
+7. Add read groups to the bam file using picard.
+8. Base recalibration using GATK.
+9. Indexing the recalibrated bam files using samtools.
 
 # Requirements
 * Ubuntu 24.04
@@ -48,7 +48,3 @@ Inside the software folder there is a script whcih has the commands to install t
 * After installing the sratoolkit, to be able to use it, you'll need to create or select a folder to be used as cache. The command needed to perform this action is in software_installation.sh.
 
 Finally, for the pipe_script.sh to be able to run the different software, you'll have to create a bin directory on the same level as the scripts and software directories. This bin directory should contian symbolic links leading to the desired softwares. The code needed to achive this is also in software_installation.sh
-
-
-
-
