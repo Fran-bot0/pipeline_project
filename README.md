@@ -1,5 +1,9 @@
 # RNA-seq-pipeline
-Description.
+After discovering bioinformatics, I took some time to learn more about the topic and learn how to code. Eventually, I felt like I was ready to tackle a more complex project and decided to build this RNA-seq pipeline to test and improve my knowledge.
+
+## How it works
+The pipe_script.sh is a bash script which uses 3 python scripts to take user input and return the final bam files with the raw counts ready to be analysed. The graphs.py script takes the bam files and returns a clustermap and a volcano plot.
+
 
 # Requirements
 * Ubuntu 24.04
@@ -13,7 +17,7 @@ Description.
 * gatk 4.2.6.1
 * picard 2.26.2
 
-The script software_installation.sh, has the commands to install all of the required software.This script is inside the software folder.
+The script software_installation.sh, has the commands to install all of the required software. This script is inside the software folder.
 
 # Python Modules, Packages and Libraries
 * BeautifulSoup
@@ -30,9 +34,9 @@ The script software_installation.sh, has the commands to install all of the requ
 * urllib
 
 # To make the code work...
-You will need to atleast edit the user in the paths used in the python scripts and the pipe_script.sh, which can be found in the scripts folder.
+You will need to at least edit the user in the paths used in the python scripts and the pipe_script.sh, which can be found in the scripts folder.
 
-Inside the software folder there is a script whcih has the commands to install the software needed to run the pipeline. However, for some softwares, some intermediate steps are necessary:
+Inside the software folder there is a script whcih has the commands to install the software needed to run the pipeline. However, for some softwares, intermediate steps are necessary:
 * For the installation of Trimmomatic to be successful, after cloning the repo, you'll need to edit the build.xml file and change the source and target values from 1.5 to 1.8 or above. After this, the ant command will work.
 * After installing the sratoolkit, to be able to use it, you'll need to create or select a folder to be used as cache. The command needed to perform this action is in software_installation.sh.
 
