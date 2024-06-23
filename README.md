@@ -29,7 +29,7 @@ Currently, the pipeline up until returning the bam files for analysis (Step 9) s
 * gatk 4.2.6.1
 * picard 2.26.2
 
-The script software_installation.sh, has the commands to install all of the required software. This script is inside the software folder.
+The script software_installation.sh has the commands to install all of the required software. This script is inside the software folder.
 
 # Python Modules, Packages and Libraries
 * BeautifulSoup
