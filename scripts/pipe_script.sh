@@ -4,7 +4,7 @@
 export PATH="$HOME/pipeline_project/bin:$PATH"
 
 # Asking the user which organism the pipeline will run with.
-read -p  'Please insert of which organism to download the primary_assembly (ex: Homo sapiens): ' input_organism
+read -p  'Please insert of which organism to download the primary_assembly (ex: Saccharomyces cerevisiae): ' input_organism
 
 # Making the input_organism lowercase and separated by an underscore.
 organism=$(tr -s ' ' '_' <<< ${input_organism,,})
