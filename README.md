@@ -1,5 +1,5 @@
 # RNA-seq-pipeline
-After discovering bioinformatics, I took some time to learn more about the topic and learn how to code. Eventually, I felt like I was ready to tackle a more complex project and decided to build this RNA-seq pipeline to test and improve my knowledge.
+After discovering bioinformatics, I took some time to learn more about the topic and learn how to code. Eventually, I felt like I was ready to tackle a more complex project and decided to build this RNA-seq pipeline to test and improve my knowledge. There is still much to improve but the learnign journey has been great.
 ### How it works
 The pipe_script.sh is a bash script which uses 2 python scripts (downloader.py and seq_treat_script.py) to take user input and return the final bam files with the raw counts ready to be analysed. The graphs.py script takes the bam files and returns a clustermap and a volcano plot.
 1. In the first step of the pipeline, the downloader.py script asks the user which organism they want to work with. Then, it downloads the primary assembly, the vcf, and the gtf files from ensembl.
