@@ -15,6 +15,8 @@ The pipe_script.sh is a bash script which uses 2 python scripts (downloader.py a
 
 Currently, the pipeline up until returning the bam files for analysis (Step 9) should work with any user input as long as the organism exists in ensembl and the accession(s) exist in NCBI. However, the graphs.py scrip is hard-coded to work with the organism and accessions used in this [study](https://doi.org/10.3389/fmicb.2024.1394880).
 
+(Organism = Saccharomyces cerevisiae; Accessions = SRR28797006, SRR28797007, SRR28797008, SRR28797012, SRR28797013, SRR28797014)
+
 # Requirements
 * Ubuntu 24.04
 * Python 3.12.3
