@@ -13,7 +13,7 @@ The pipe_script.sh is a bash script which uses 2 python scripts (downloader.py a
 9. Indexing the recalibrated bam files using samtools.
 10. Finally, the graph.py takes the bam files, calculates the RPKM values, performs quantile normalization, executes a t-test between the samples, calculates the fold change, and returns a clustermap and a volcano plot.
 
-Currently, the pipeline up until returning the bam files for analysis (Step 9) should work with any user input as long as the organism exists in ensembl (with available gtf and vcf files) and the accession(s) exist in NCBI. However, the graphs.py scrip is hard-coded to work with the bam files originated by running the pipeline with the organism and accessions used in this [study](https://doi.org/10.3389/fmicb.2024.1394880).
+Currently, the pipeline up until returning the bam files for analysis (Step 9) should work with any user input as long as the organism exists in ensembl (with available gtf and vcf files) and the accession(s) exist in NCBI. However, the graphs.py scrip is still hard-coded to work with the bam files originated by running the pipeline with the organism and accessions used in this [study](https://doi.org/10.3389/fmicb.2024.1394880).
 
 (Organism = Saccharomyces cerevisiae; Accessions = SRR28797006, SRR28797007, SRR28797008, SRR28797012, SRR28797013, SRR28797014)
 
