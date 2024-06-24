@@ -46,7 +46,9 @@ The script software_installation.sh has the commands to install all of the requi
 * urllib
 
 # To make the code work...
-You will need to at least edit the user in the paths used in the python scripts and pipe_script.sh (Inside the scripts folder).
+You will need to at least edit the user in the paths used in the python scripts and pipe_script.sh.
+
+You'll need to give execute permissions to pipe_script.sh using chmod before running the script.
 
 Inside the software folder there is a script which has the commands to install the software needed to run the pipeline. However, for some softwares, intermediate steps are necessary:
 * For the installation of Trimmomatic to be successful, after cloning the repo, you'll need to edit the build.xml file and change the source and target values from 1.5 to 1.8 or above. After this, the ant command will work.
