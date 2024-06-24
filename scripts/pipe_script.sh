@@ -16,7 +16,7 @@ cd /home/francisco/pipeline_project/pipeline_data/$organism/input_files
 
 # Downloads the primary assembly of the specified organism from Ensembl. If the primary assembly doesn't exist, it 
 # downloads the toplevel file. Also downloads the gtf and the vcf files.
-python /home/francisco/pipeline_project/scripts/downloader.py $organism || exit
+python /home/francisco/pipeline_project/downloader.py $organism || exit
 
 # Extracting gtf file
 yes n | gunzip -k gtf_$organism.gtf.gz
@@ -53,4 +53,4 @@ java -Xmx4g -jar /home/francisco/pipeline_project/software/picard/picard.jar Cre
 cd /home/francisco/pipeline_project/pipeline_data/$organism/output_files
 
 # Takes the accessions the user wants to work with and returns the bam files and bai files necessary for the next step
-python /home/francisco/pipeline_project/scripts/seq_treat_script.py $organism || exit
+python /home/francisco/pipeline_project/seq_treat_script.py $organism || exit
