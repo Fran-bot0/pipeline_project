@@ -56,4 +56,5 @@ Inside the software folder there is a script which has the commands to install t
 
 Finally, for the pipe_script.sh to be able to run the different software, you'll have to create a bin directory on the same level as the software directory. This bin directory should contian symbolic links leading to the desired softwares. The code needed to achieve this is also in software_installation.sh.
 
-![ezcv logo](https://github.com/Fran-bot0/pipeline_project/blob/main/zhow_directories_should_be.png)
+To better understand how the directories should be organized, you can follow this scheme:
+![file_order](https://github.com/Fran-bot0/pipeline_project/blob/main/zhow_directories_should_be.png)
