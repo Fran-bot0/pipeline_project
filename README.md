@@ -58,4 +58,5 @@ Finally, for the pipe_script.sh to be able to run the different software, you'll
 
 To better understand how the directories should be organized, you can follow this scheme:
 
+
 ![file_order](https://github.com/Fran-bot0/pipeline_project/blob/main/zhow_directories_should_be.png)
