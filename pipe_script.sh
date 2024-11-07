@@ -54,3 +54,6 @@ cd /home/francisco/pipeline_project/pipeline_data/$organism/output_files
 
 # Takes the accessions the user wants to work with and returns the bam files and bai files necessary for the next step
 python /home/francisco/pipeline_project/seq_treat_script.py $organism || exit
+
+# Creates the Volcano plot and Clustermap
+python /home/francisco/pipeline_project/graphs.py
